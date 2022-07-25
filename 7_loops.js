@@ -55,3 +55,62 @@ while (j <= 5) {
     console.log(`j is ${j}`);
     j++;
 }
+
+const target = Math.floor(Math.random() * 10);
+let guess = Math.floor(Math.random() * 10);
+while (guess !== target) {
+    console.log(guess);
+    guess = Math.floor(Math.random() * 10)
+}
+
+//For...of
+
+let sports = ['football', 'baseball', 'basketball']
+
+for (let sport of sports) {
+    console.log(sport);
+}
+
+for (let char of 'hellooooo') {
+    console.log(char);
+}
+
+const words1 = ['mail', 'milk', 'bath', 'black'];
+const words2 = ['box', 'shake', 'tub', 'berry'];
+
+for (let i = 0; i < words1.length; i++) {
+    console.log(words1[i], words2[i]);
+}
+
+//looping over objects - object is not iterable 
+const movieReviews = {
+    Arrival: 9.5,
+    Alien: 9,
+    'Kill Bill': 9.9,
+    Nope: 8.1,
+    'American Gangster': 8.8,
+};
+
+//use Object.keys
+// for of 
+
+for (let movie of Object.keys(movieReviews)) {
+    console.log(movie, movieReviews[movie]);
+}
+
+const jeopardyWinnings = {
+    regularPlay: 25,
+    watsonChallenge: 25,
+    tournamentOfChampions: 25,
+    battleofTheDecades: 50.5,
+}
+
+let totalWinnings = 0;
+for (let prop in jeopardyWinnings) {
+    totalWinnings += jeopardyWinnings[prop];
+}
+console.log(totalWinnings)
+
+for (let k in [25, 51, 77, 103]) {
+    console.log(k);
+}  // this prints out 0, 1 , 2, 3
