@@ -101,3 +101,5 @@ function getCard() {
     return yourCard
 }
 console.log(getCard())
+
+console.dir(getCard)
