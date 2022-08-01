@@ -85,5 +85,15 @@ const newSquare = (x) => {
 const isEven = (num) => {
     return num % 2 === 0; 
 }
+// can also write without parenthesis 
+// const isEven = num => {
+//     return num % 2 === 0; 
+// }
+
+const greet = () => {
+    console.log('hi')
+}
+
+
 
 
