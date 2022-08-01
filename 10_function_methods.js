@@ -49,3 +49,27 @@ books.forEach(function(book) {
 books.forEach(function(book, idx) {
     console.log(book.title, idx);
 })
+
+// map 
+const numbers = [20, 21, 22, 23, 24, 25, 26, 27 ]
+const words = ['asap', 'brb','rsvp', 'diy']
+
+const doubles = numbers.map(function(num){
+    return num * 2; 
+})
+// must put return or else it iwll be an array of undefined 
+
+console.log(doubles); 
+
+const numDetails = numbers.map(function(n){
+    return {
+        value: n, 
+        isEven: n % 2 == 0
+    }
+})
+
+const abbrevs = words.map(function(word){
+    return word.toUpperCase().split('').join('.');
+})
+console.log(abbrevs)
+
