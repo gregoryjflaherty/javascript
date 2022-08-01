@@ -73,3 +73,17 @@ const abbrevs = words.map(function(word){
 })
 console.log(abbrevs)
 
+// arrow functions 
+// another way of defiing a function 
+const oldSquare = function(x){
+    return x * x; 
+}
+const newSquare = (x) => {
+    return x * x; 
+}
+
+const isEven = (num) => {
+    return num % 2 === 0; 
+}
+
+
