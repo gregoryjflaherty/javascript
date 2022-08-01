@@ -94,6 +94,13 @@ const greet = () => {
     console.log('hi')
 }
 
+// arrow functions - implicit returns
+const square = n => (n * n);
+// parenthesis instead of {}
 
 
+const numsTwo = [1, 2, 3, 4, 5, 6, 7, 8]; 
 
+const doubles2 = numsTwo.map(n => n * 2); 
+
+const parityList = numsTwo.map((n) => (n % 2 === 0 ? 'even' : 'odd'));
