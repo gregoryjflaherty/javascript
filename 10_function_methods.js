@@ -104,3 +104,43 @@ const numsTwo = [1, 2, 3, 4, 5, 6, 7, 8];
 const doubles2 = numsTwo.map(n => n * 2); 
 
 const parityList = numsTwo.map((n) => (n % 2 === 0 ? 'even' : 'odd'));
+
+// find
+// returns on element stops after it finds one
+let movies = ['Mr. Deeds', 'Mrs. Doubtfire', 'Mr. and Mrs. Smith']
+
+const movie = movies.find(movie => {
+    return movies.includes('Mrs');
+})
+const movie2 = movies.find(movie => 
+     movie.indexOf('Mrs') === 0); 
+
+// filter 
+// creates new array with all elements that pass as true
+
+const filterNums = [23, 45, 76, 89, 98]
+const odds = filterNums.filter(n => n % 2 === 1)
+
+// some && every
+// both boolean methods that return true or false 
+// does every element .... have a length of 3
+const shortWords = ['dig', 'dog', 'lag', 'pug']
+const lengthOfThree = shortWords.every(word => word.length === 3)
+
+// some returns true if any of the elements pass as true 
+
+const anyWithD = words.some(word => word[0] === 'd')
+
+// sort
+// pass in a compare function 
+const prices = [400.50, 3000, 99.99, 35.99, 12.00, 9500];
+const prices1 = [400.50, 3000, 99.99, 35.99, 12.00, 9500];
+const prices2 = [400.50, 3000, 99.99, 35.99, 12.00, 9500];
+const ascending = prices1.sort((a, b) => a - b);
+// or 
+const ascending2 = prices.slice().sort((a, b) => a - b);
+// different reference 
+
+const descending = prices2.sort((a, b) => b - a);
+
+// reduce 
