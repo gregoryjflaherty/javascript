@@ -66,3 +66,44 @@ const raceResults = ['Greg', 'Dave', 'Caleb', 'Justin']
 const [gold, silver, bronze] = raceResults;
 const [first, , ,fourth] = raceResults; 
 const [winner, ...others] = raceResults; 
+
+const athlete = {
+    first: 'Greg', 
+    last: 'Flaherty',
+    country: 'US',
+    sport: 'tennis'
+}
+
+const {country: nation, sport: eventType} = athlete;
+const {firstName, lastName, ...other } = athlete;
+
+//nested destructuring
+const wimbledonResults = [
+{
+    first: 'Novak', 
+    last: 'Djokovic',
+    country: 'Serbia'
+}, 
+{
+    first: 'Nick', 
+    last: 'Kyrgios', 
+    country: 'Australia'
+}, 
+{
+    first: 'Rafael', 
+    last: 'Nadal', 
+    country: 'Spain'
+}] 
+
+const [{first: goldWinner}, {country}] = wimbledonResults;
+
+// param destructuring
+function print(athlete){
+    const {first, last, sport} = athlete;
+    console.log(`${first} ${last}, ${sport}`);
+}
+
+const response = ['HTTP/1.1', '200 OK', 'application/json']
+function parseResponse([protocol, statusCode, contentType]){
+    console.log(`Status: ${statusCode}`)
+}
