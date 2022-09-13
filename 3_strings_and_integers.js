@@ -6,7 +6,7 @@ false
 
 // strings of characters single or double 
 let firstName = "Greg"; 
-let msg = 'Can also use single but stay consistent'
+let msg1 = 'Can also use single but stay consistent'
 let numberString = '1235'
 typeof '1989'
 // string
@@ -34,6 +34,10 @@ mySong[12]
 mySong[0] = "F";
 mySong[0] 
 // still equals "S"
+let gibberish = 'asdkgb3e21786fqwd'
+gibberish[gibberish.length - 1]
+// "d"
+
 
 let msg = "You are grounded"; 
 msg.toUpperCase()

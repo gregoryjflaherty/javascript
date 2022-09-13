@@ -68,7 +68,9 @@ console.log(animals.splice(3, 2))
 console.log(animals)
 
 // array.sort()
+
 // sorts only strings ! converts everything to string then sorts 
+// then sorts by UTF-16
 
 // const can change when assigned to an array - because the constant is the assignment
 // to the array not the values within it. 

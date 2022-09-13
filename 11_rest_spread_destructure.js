@@ -64,8 +64,19 @@ fullName('tom', 'jones', 'III', 'order of the pheonix')
 // destructuring arrays & objects
 const raceResults = ['Greg', 'Dave', 'Caleb', 'Justin']
 const [gold, silver, bronze] = raceResults;
+// gold = 'Greg'
+// silver = 'Dave'
+// bronze = 'Caleb'
+
 const [first, , ,fourth] = raceResults; 
+// first = 'Greg'
+// fourt = 'Justin'
+
+
+
 const [winner, ...others] = raceResults; 
+//winner =  'Greg'
+//others=  ['Dave', 'Caleb', 'Justin']
 
 const athlete = {
     first: 'Greg', 
@@ -96,6 +107,10 @@ const wimbledonResults = [
 }] 
 
 const [{first: goldWinner}, {country}] = wimbledonResults;
+// goldWinner = 'Novak'
+// country = 'Australia'
+
+
 
 // param destructuring
 function print(athlete){
@@ -107,3 +122,6 @@ const response = ['HTTP/1.1', '200 OK', 'application/json']
 function parseResponse([protocol, statusCode, contentType]){
     console.log(`Status: ${statusCode}`)
 }
+//protocol = 'HTTP/1.1'
+//statusCode = '200 OK'
+//contentType = 'application/json'
