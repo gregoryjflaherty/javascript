@@ -17,8 +17,28 @@
     // const img = document.getElementById('bear-photo')
     // console.dir(img)  => return document object
 
-    //document.getElementsByTagName
+    //document.getElementsByTagName()
     // returns one or more
     // document.getElementsByTagName('input') => HTMLCollection(3) [input, input, input]
-    //
+    // not an array but can do array-ish things- HTML collection
+    // can access elements and iterate thats it
+
+    // document.getElementsByClassName()
+    // const ul = document.getElementsByClassName('ul')
+    // ul.getElementsByClassName('special')
+    // narrowed down search
+
+    //document.querySelector();
+    // selected by css styled selector - returns first element
+    //document.querySelector('#bear-photo')
+    //document.querySelector('.special')
+    //document.querySelector('h1')
+    // select polar list item
+    // document.querySelector('body section ul li.special')
+    // get password
+    // document.querySelector('input[type="password"]')
+
+    //document.querySelectorAll()
+    // document.querySelectorAll('input')
+    
 // 2 - manipulate 
