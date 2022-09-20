@@ -160,3 +160,32 @@ const newLink = document.createElement("a")
 newLink.innerText = "FASTIFY"
 newLink.href = "https://www.youtube.com/watch?v=xdzqcG5dS7Q"
 p1.appendChild(newLink)
+
+const newTodoLi = document.createElement("li")
+newTodoLi.innerText = "Do this now!"
+firstParent.insertBefore(newTodoLi, firstTodo)  
+
+const finalTodoLi = document.createElement("li")
+finalTodoLi.innerText = "Not that important task!"
+const lastTodoLi = document.querySelectorAll("li.todo")[1]
+firstParent.insertBefore(finalTodoLi, lastTodoLi)
+
+
+// <!-- beforebegin --> 
+// <p>
+        // <!-- afterbegin --> 
+        // foo
+        // <!-- beforeend -->
+// </p>
+// <!-- afterend -->
+
+const i = document.createElement("i")
+i.innerText = "I am italics"
+p1.insertAdjacentElement("beforebegin", i)
+const afterI = document.createElement("i")
+afterI.innerText = "I am italics in the paragraph! "
+p1.insertAdjacentElement("afterbegin", afterI)
+const endI = document.createElement("i")
+endI.innerText = "Ending ITALICS! "
+p1.insertAdjacentElement("beforeend", endI)
+
