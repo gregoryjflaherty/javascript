@@ -8,8 +8,32 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <button> Click Here </button>
-    <input type="range" min="10" max="50"></input>
+    <h1>Pick A COLOR</h1>
+    <button> TEST BUTTON - does nothing </button><br>
+    <input type="range" min="10" max="50"></input><br>
+    <h3>KeyPress Login</h3>
+    <input id="username" placeholder="username" type="text"></input><br>
+    
+    <h3>List</h3>
+    <ul id="items"></ul>
+    <input id="addItem" placeholder="Enter list item" type="text"></input><br>
+
+    
+    <section id="boxes"></section>
+
+    <form id="signup-form">
+        <input name="creditCard" type="text" placeholder="credit card number" id="cc">
+        <label>
+            I agree to sell my soul to your company
+            <input name="agreeToTerms" type="checkbox" id="terms">
+        </label>
+        <select name="selectedVeggie" id="veggie">
+            <option value="eggplant">Eggplant</option>
+            <option value="asparagus">Asparagus</option>
+            <option value="carrot">Carrot</option>
+        </select>
+        <input type="Submit">
+    </form>
     <script src="15_events.js"> </script>
 </body>
 </html>
